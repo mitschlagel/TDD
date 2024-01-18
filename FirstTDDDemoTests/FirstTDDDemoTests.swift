@@ -9,6 +9,8 @@ import XCTest
 @testable import FirstTDDDemo
 
 final class FirstTDDDemoTests: XCTestCase {
+    
+    let customAsserts = CustomAsserts()
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -18,19 +20,17 @@ final class FirstTDDDemoTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    func test_numberOfVowels_whenGivenSpencer_shouldReturn2() {
+        let viewController = ViewController()
+        let result = viewController.numberOfVowels(in: "Spencer")
+        
+        XCTAssertEqual(result, 2, "Expected 2 vowels in 'Spencer' but got \(result)")
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func test_custom_equal_ints() {
+        let x = 1
+        let y = 1
+        customAsserts.CustomAssertEqual(x, y)
     }
 
 }

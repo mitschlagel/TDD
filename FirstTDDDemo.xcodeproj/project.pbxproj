@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F72F9F542B5841F70025990F /* CustomAsserts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72F9F532B5841F70025990F /* CustomAsserts.swift */; };
 		F738BE392B577CE000D3021D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F738BE382B577CE000D3021D /* AppDelegate.swift */; };
 		F738BE3B2B577CE000D3021D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F738BE3A2B577CE000D3021D /* SceneDelegate.swift */; };
 		F738BE3D2B577CE000D3021D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F738BE3C2B577CE000D3021D /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F72F9F532B5841F70025990F /* CustomAsserts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAsserts.swift; sourceTree = "<group>"; };
 		F738BE352B577CE000D3021D /* FirstTDDDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstTDDDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F738BE382B577CE000D3021D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F738BE3A2B577CE000D3021D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				F738BE4F2B577CE300D3021D /* FirstTDDDemoTests.swift */,
+				F72F9F532B5841F70025990F /* CustomAsserts.swift */,
 			);
 			path = FirstTDDDemoTests;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F738BE502B577CE300D3021D /* FirstTDDDemoTests.swift in Sources */,
+				F72F9F542B5841F70025990F /* CustomAsserts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
